@@ -10,7 +10,7 @@ ARG RUNNER_VERSION="2.277.1"
 RUN apt-get update -y && \
     apt-get upgrade -y && \
     useradd -m docker && \
-    apt-get install -y curl jq build-essential libssl-dev libffi-dev python3 python3-venv python3-dev && \
+    apt-get install -y curl jq build-essential libssl-dev libffi-dev python3 python3-venv python3-dev git && \
     apt-get clean
 
 # cd into the user directory, download and unzip the github actions runner
